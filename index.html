@@ -105,7 +105,7 @@
     .hero p { color: var(--muted); font-size: 18px; margin: 14px 0 24px; max-width: 650px; }
     .hero .cta { display: flex; gap: 12px; flex-wrap: wrap; }
     .hero .photo { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: var(--border); background: #eee; }
-    .hero .photo img { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0; }
+    .hero .photo img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center; border-radius: 0; }
     .hero-tags { margin-top: 20px; display: flex; gap: 9px; align-items: center; flex-wrap: wrap; }
 
     .tag {
@@ -339,7 +339,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <div>
         <h1 id="hero-title">Сувениры в один клик</h1>
-        <p>Современные вендинговые автоматы с национальной сувенирной продукцией. Доступ к культуре — быстро, красиво и рядом с вами.</p>
+        <p>Современные вендинговые автоматы с сувенирами, подарками и продукцией с башкирской тематикой. Памятные вещи о Башкортостане — быстро, удобно и рядом с вами.</p>
         <div class="cta">
           <a class="button btn-primary" href="#about">Узнать больше</a>
           <a class="button btn-ghost" href="#catalog">Посмотреть каталог</a>
@@ -352,7 +352,7 @@
       </div>
 
       <div class="photo">
-        <div class="image-placeholder hero-placeholder" role="img" aria-label="Заглушка вместо фотографии вендингового автомата"></div>
+        <img src="images/vending.webp" alt="Вендинговый автомат «БашСувенир» с сувенирами Башкортостана" fetchpriority="high">
       </div>
     </section>
 
@@ -382,15 +382,15 @@
         <div class="grid-3">
           <article class="card">
             <h3>Идея</h3>
-            <p class="muted">Делаем сувениры доступными в местах притяжения: вокзалы, музеи, набережные, кампусы.</p>
+            <p class="muted">Делаем сувениры о Башкортостане доступными в туристических и городских точках с высоким потоком посетителей.</p>
           </article>
           <article class="card">
             <h3>Дизайн</h3>
-            <p class="muted">Минимализм + этномотивы: эстетично и узнаваемо.</p>
+            <p class="muted">Современная подача сочетается с башкирскими орнаментами, символами региона и узнаваемыми образами.</p>
           </article>
           <article class="card">
             <h3>Экономика</h3>
-            <p class="muted">Аналитика и удалённое управление ассортиментом помогают принимать решения на основе спроса.</p>
+            <p class="muted">Вендинговый формат позволяет размещать разнообразный ассортимент и оперативно обновлять его с учётом спроса.</p>
           </article>
         </div>
       </div>
@@ -400,28 +400,48 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Каталог сувениров</h2>
-          <div class="muted">Лучшее от локальных мастеров</div>
+          <div class="muted">Сувениры с башкирской тематикой</div>
         </div>
         <div class="catalog">
           <article class="card product">
-            <div class="image-placeholder product-placeholder" role="img" aria-label="Заглушка вместо фотографии брелоков"></div>
-            <div class="meta"><strong>Брелоки</strong><div class="price">200 ₽</div></div>
-            <div class="muted">Эмалированные, с орнаментом</div>
+            <img src="images/postcards.webp" alt="Сувенирные открытки с башкирскими мотивами" loading="lazy">
+            <div class="meta"><strong>Сувенирные открытки</strong></div>
+            <div class="muted">Иллюстрированные открытки с национальными мотивами, пейзажами и образами Башкортостана.</div>
           </article>
           <article class="card product">
-            <div class="image-placeholder product-placeholder" role="img" aria-label="Заглушка вместо фотографии магнитов"></div>
-            <div class="meta"><strong>Магниты</strong><div class="price">700 ₽</div></div>
-            <div class="muted">Пейзажи и символы региона</div>
+            <img src="images/shoppers.webp" alt="Текстильные сумки-шопперы с символикой Башкортостана" loading="lazy">
+            <div class="meta"><strong>Сумки-шопперы</strong></div>
+            <div class="muted">Текстильные сумки с башкирскими орнаментами, природными мотивами и символикой региона.</div>
           </article>
           <article class="card product">
-            <div class="image-placeholder product-placeholder" role="img" aria-label="Заглушка вместо фотографии книг"></div>
-            <div class="meta"><strong>Книги</strong><div class="price">550 ₽</div></div>
-            <div class="muted">Легенды и путеводители</div>
+            <img src="images/gingerbread.webp" alt="Сувенирные пряники с башкирской тематикой" loading="lazy">
+            <div class="meta"><strong>Сувенирные пряники</strong></div>
+            <div class="muted">Фигурные расписные пряники с башкирскими образами и тематическим оформлением.</div>
           </article>
           <article class="card product">
-            <div class="image-placeholder product-placeholder" role="img" aria-label="Заглушка вместо фотографии текстиля"></div>
-            <div class="meta"><strong>Текстиль</strong><div class="price">1200 ₽</div></div>
-            <div class="muted">Сумки, чехлы, коврики</div>
+            <img src="images/earrings.webp" alt="Декоративные серьги с орнаментом" loading="lazy">
+            <div class="meta"><strong>Украшения</strong></div>
+            <div class="muted">Декоративные серьги с орнаментальными элементами и яркими акцентами.</div>
+          </article>
+          <article class="card product">
+            <img src="images/honey.webp" alt="Сувенирная банка башкирского мёда" loading="lazy">
+            <div class="meta"><strong>Башкирский мёд</strong></div>
+            <div class="muted">Подарочное оформление традиционного продукта, связанного с Башкортостаном.</div>
+          </article>
+          <article class="card product">
+            <img src="images/socks.webp" alt="Носки с башкирскими орнаментами и символикой Уфы" loading="lazy">
+            <div class="meta"><strong>Носки с символикой</strong></div>
+            <div class="muted">Повседневный сувенир с национальными узорами, пчелиными мотивами и городской тематикой.</div>
+          </article>
+          <article class="card product">
+            <img src="images/statue.webp" alt="Сувенирная статуэтка всадника" loading="lazy">
+            <div class="meta"><strong>Сувенирная статуэтка</strong></div>
+            <div class="muted">Декоративная настольная композиция с образом всадника — памятный сувенир о регионе.</div>
+          </article>
+          <article class="card product">
+            <img src="images/stickers.webp" alt="Набор наклеек с достопримечательностями и символами Башкортостана" loading="lazy">
+            <div class="meta"><strong>Набор наклеек</strong></div>
+            <div class="muted">Стикеры с достопримечательностями Уфы, природными пейзажами и национальными символами.</div>
           </article>
         </div>
       </div>
