@@ -133,6 +133,18 @@
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; border: var(--border); }
     .card h3 { margin-top: 0; }
+    .about-card { padding: 0; overflow: hidden; }
+    .about-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 0;
+      background: #eee;
+    }
+    .about-card-body { padding: 20px; }
+    .about-card-body h3 { margin: 0 0 10px; }
+    .about-card-body p { margin: 0; }
+
 
     .catalog { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
     .product { overflow: hidden; display: flex; flex-direction: column; gap: 9px; }
@@ -232,6 +244,8 @@
       .hero .cta { display: grid; grid-template-columns: 1fr; }
       .hero .button { width: 100%; }
       .grid-3, .catalog, .timeline, .quotes, .contact-layout { grid-template-columns: 1fr; }
+      #about .grid-3 { gap: 20px; }
+      .about-card-body { padding: 20px 22px 24px; }
       .section-head { align-items: flex-start; flex-direction: column; margin-bottom: 22px; }
       .map-shell { height: 300px; }
       .map-actions .button { width: 100%; }
@@ -379,18 +393,27 @@
           <h2>О проекте</h2>
           <div class="muted">Технологии ради сохранения культуры</div>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Идея</h3>
-            <p class="muted">Делаем сувениры о Башкортостане доступными в туристических и городских точках с высоким потоком посетителей.</p>
+        <div class="grid-3 about-grid">
+          <article class="card about-card">
+            <img src="images/about-idea.webp" alt="Подборка сувениров «БашСувенир» с тематикой Башкортостана" loading="lazy">
+            <div class="about-card-body">
+              <h3>Идея</h3>
+              <p class="muted">Делаем сувениры о Башкортостане доступными в туристических и городских точках с высоким потоком посетителей.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Дизайн</h3>
-            <p class="muted">Современная подача сочетается с башкирскими орнаментами, символами региона и узнаваемыми образами.</p>
+          <article class="card about-card">
+            <img src="images/about-design.webp" alt="Разработка дизайна сувениров «БашСувенир» с башкирскими мотивами" loading="lazy">
+            <div class="about-card-body">
+              <h3>Дизайн</h3>
+              <p class="muted">Современная подача сочетается с башкирскими орнаментами, символами региона и узнаваемыми образами.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Экономика</h3>
-            <p class="muted">Вендинговый формат позволяет размещать разнообразный ассортимент и оперативно обновлять его с учётом спроса.</p>
+          <article class="card about-card">
+            <img src="images/about-economy.webp" alt="Витрина сувениров «БашСувенир» и аналитика ассортимента" loading="lazy">
+            <div class="about-card-body">
+              <h3>Экономика</h3>
+              <p class="muted">Вендинговый формат позволяет размещать разнообразный ассортимент и оперативно обновлять его с учётом спроса.</p>
+            </div>
           </article>
         </div>
       </div>
