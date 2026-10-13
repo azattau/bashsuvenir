@@ -297,6 +297,7 @@
     }
     .grant-logo-link.platform {
       background: #fff;
+      min-width: 285px;
     }
     .grant-logo-link img {
       display: block;
@@ -305,6 +306,41 @@
       height: 62px;
       object-fit: contain;
       border-radius: 0;
+    }
+    .platform-mark {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #161616;
+      line-height: 1.05;
+      text-align: left;
+    }
+    .platform-mark-icon {
+      width: 54px;
+      height: 54px;
+      flex: 0 0 54px;
+      position: relative;
+      border: 5px solid #6f4cff;
+      border-right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    .platform-mark-icon::after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      top: 8px;
+      width: 30px;
+      height: 30px;
+      border-top: 5px solid #6f4cff;
+      border-right: 5px solid #6f4cff;
+      transform: rotate(45deg);
+    }
+    .platform-mark-text {
+      max-width: 195px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .01em;
+      text-transform: uppercase;
     }
     .grant-support-copy h2 {
       margin: 0 0 8px;
@@ -377,7 +413,10 @@
             <img src="https://www.data-track.ru/fsi-logo.png" alt="Фонд содействия инновациям">
           </a>
           <a class="grant-logo-link platform" href="https://univertechpred.ru/" target="_blank" rel="noopener noreferrer" aria-label="Платформа университетского технологического предпринимательства">
-            <img src="https://univertechpred.ru/local/templates/mo/assets/img/master/main_project-logo.svg" alt="Платформа университетского технологического предпринимательства">
+            <span class="platform-mark" aria-hidden="true">
+              <span class="platform-mark-icon"></span>
+              <span class="platform-mark-text">Платформа университетского технологического предпринимательства</span>
+            </span>
           </a>
         </div>
         <div class="grant-support-copy">
