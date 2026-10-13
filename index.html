@@ -280,10 +280,11 @@
       align-items: center;
     }
     .grant-logos {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
+      gap: 14px;
+      width: 100%;
     }
     .grant-logo-link {
       display: inline-flex;
@@ -303,17 +304,17 @@
     }
     .grant-logo-link img {
       display: block;
-      width: auto;
-      max-width: 240px;
-      height: 62px;
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      max-height: 105px;
       object-fit: contain;
       border-radius: 0;
     }
     .grant-logo-link.platform img {
-      width: 308px;
       max-width: 100%;
-      height: auto;
-      border-radius: 12px;
+      max-height: none;
+      border-radius: 10px;
     }
     .grant-support-copy h2 {
       margin: 0 0 8px;
@@ -327,9 +328,9 @@
     }
     @media (max-width: 760px) {
       .grant-support-inner { grid-template-columns: 1fr; }
-      .grant-logos { gap: 16px; }
-      .grant-logo-link { flex: 1 1 220px; }
-      .grant-logo-link img { max-width: 220px; }
+      .grant-logos { gap: 10px; }
+      .grant-logo-link { padding: 8px; min-height: 74px; }
+      .grant-logo-link img { max-width: 100%; }
     }
 
   </style>
@@ -386,7 +387,7 @@
             <img src="https://www.data-track.ru/fsi-logo.png" alt="Фонд содействия инновациям">
           </a>
           <a class="grant-logo-link platform" href="https://univertechpred.ru/" target="_blank" rel="noopener noreferrer" aria-label="Платформа университетского технологического предпринимательства">
-            <img src="data:image/png;base64,The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id." alt="Платформа университетского технологического предпринимательства">
+            <img src="images/platform-logo.png" alt="Платформа университетского технологического предпринимательства" width="617" height="324" loading="lazy">
           </a>
         </div>
         <div class="grant-support-copy">
